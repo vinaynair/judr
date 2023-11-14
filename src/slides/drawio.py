@@ -11,7 +11,7 @@ def draw(drawio_file_name, overrides: Dict = {}, presentation_mode=False):
     
     file = Path(drawio_file_name)
     if presentation_mode:
-        png_file = Path(file.stem+"-00.png")
+        png_file = Path(file.stem+"-00.png") #FIXME hardcoded since it stop gap anyways
         if png_file.exists():
             return Image(png_file.name,width=width,height=height)
         else:
@@ -25,5 +25,3 @@ def draw(drawio_file_name, overrides: Dict = {}, presentation_mode=False):
         height=height,
     )
     
-    
-# TODO add support for vertical split

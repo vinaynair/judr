@@ -1,0 +1,5 @@
+site_name: JuDr
+site_url: https://github.com/vinaynair/judr
+nav:
+  - Sample slide with image: deck.slides.html
+theme: readthedocs
